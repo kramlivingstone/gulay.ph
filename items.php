@@ -9,8 +9,8 @@ function display_content() {
 
 ?> 
 	
-<?php  
-
+<?php
+require_once 'item_filter.php';
 require_once 'connection.php';
 
 
@@ -20,31 +20,10 @@ $result = mysqli_query($conn,$sql);
 
 if(mysqli_num_rows($result)>0) {
 echo "<div class='row'>";
-?>
-<div class="col-md-12">
-<form method="POST">
-	<div class="form-group">
-		<label for='veggieCategory'>Category:</label>
-		<select class="form-control" name="veggieCategory" id="filter">
-			<option>Bulbs</option>
-			<option>Flowers</option>
-			<option>Fruits</option>
-			<option>Fungi</option>
-			<option>Leaves</option>
-			<option>Roots</option>
-			<option>Seeds</option>
-			<option>Stems</option>
-			<option>Tubers</option>
-		</select> <br>
-		<input class="btn btn-primary" type="submit" name="search" value="Search">
-	</div>
-</form>
-</div>
-<?php
+
 while ($row = mysqli_fetch_assoc($result)) {
 extract($row); 
 ?>
-	
 	<div class='col-sm-6 col-md-4'>
 		<div class='thumbnail'>	
 			<img id='itemImage' src = <?php echo $item_image; ?> alt='vegetables'>
