@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Artichoke",
+        "description": "A variety of a species of thistle cultivated as a food.",
+        "image": "img\/artichoke.jpg",
+        "price": "Php 200.00",
+        "category": "Green"
+    },
+    {
+        "name": "Cabbage",
+        "description": "A variety of a species of thistle cultivated as a food.",
+        "image": "img\/cabbage.jpg",
+        "price": "Php 150.00",
+        "category": "Green"
+    },
+    {
+        "name": "Carrot",
+        "description": "A variety of a species of thistle cultivated as a food.",
+        "image": "img\/carrot.jpg",
+        "price": "Php 120.00",
+        "category": "Orange"
+    },
+    {
+        "name": "Cabbage",
+        "description": "A variety of a species of thistle cultivated as a food.",
+        "image": "img\/cabbage.jpg",
+        "price": "Php 150.00",
+        "category": "Green"
+    },
+    {
+        "name": "Cabbage",
+        "description": "A variety of a species of thistle cultivated as a food.",
+        "image": "img\/cabbage.jpg",
+        "price": "Php 150.00",
+        "category": "Green"
+    },
+    {
+        "name": "Artichoke",
+        "description": "A variety of a species of thistle cultivated as a food.",
+        "image": "img\/artichoke.jpg",
+        "price": "Php 200.00",
+        "category": "Green"
+    }
+]

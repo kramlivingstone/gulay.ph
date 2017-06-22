@@ -1,0 +1,145 @@
+.container {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+#brand-logo {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#brand-logo img {
+	height: 220px;
+	width: 220px;
+}
+
+
+/*************
+	NAVBAR
+**************/
+
+.navbar {
+	background-color: white;
+	border: 0;
+	margin-bottom: 10px;
+}
+
+.nav .navbar-nav {
+	margin-left: 300px;
+}
+
+.navbar-collapse {
+	text-align: center;
+}
+
+
+
+
+.thumbnail {
+	max-width: 250px;
+	max-height: 320px;
+	border-radius: 0;
+	text-align: center;
+}
+
+
+
+#itemImage {
+	width: 150px;
+	height: 150px;
+}
+
+
+h3 {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/************
+	FOOTER
+*************/
+
+footer p {
+	text-align: center;
+}
+
+footer ul {
+	list-style: none;
+	text-align: center;
+}
+
+footer ul li {
+	display: inline-block;
+	padding-right: 40px;
+}
+
+footer i {
+	color: green;
+}
+
+footer i:hover {
+	color: black;
+}
+
+/*************
+	ITEMS
+**************/
+#add_new {
+	margin-right: 15px;
+	float: right;
+}
+
+#filter {
+	width: 150px;
+}
+
+/************
+	SIGN IN
+*************/
+
+
+.login {
+	text-align: center;
+}
+
+#logImage {
+	height: 250px;
+	width: 400px;
+}
+
+.artichokes {
+	height: 100%;
+	width: 100%;
+}
+
+form h2 {
+	margin-bottom: 30px;
+}
+
+form input {
+	max-width: 300px;
+	margin-bottom: 20px;
+}
+
+
+
+
+/**********
+  REGISTER
+***********/
+
+#regImage {
+	max-height: 400px;
+	max-width: 400px;
+}
+
+#vegImage {
+	height: 100%;
+	width: 100%;
+}
+
+.btn {
+	margin-right: 10px;
+}

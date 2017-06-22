@@ -1,0 +1,23 @@
+[
+    {
+        "username": "markmarasigan",
+        "password": "marasiganmark",
+        "confirm_pw": "marasiganmark",
+        "email": "kramlivingstone@yahoo.com.ph",
+        "name": "Mark Marasigan"
+    },
+    {
+        "username": "admin",
+        "password": "password3",
+        "confirm_pw": "password3",
+        "email": "admin@gulay.ph",
+        "name": "Administrator"
+    },
+    {
+        "username": "test",
+        "password": "test",
+        "confirm_pw": "test",
+        "email": "test@gulay.ph",
+        "name": "Test"
+    }
+]
