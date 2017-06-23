@@ -1,51 +1,11 @@
 <?php 
 
 
-if(isset($_POST['login'])) {
-	require_once 'connection.php';
-
-	$username = $_POST['usernameLogin'];
-	$password = sha1($_POST['passwordLogin']);
-
-	$sql = "SELECT * FROM users
-			WHERE username = '$username'
-			AND password = '$password'";
-
-	$result = mysqli_query($conn,$sql);
-	if(mysqli_num_rows($result)>0) {
-		while($row = mysqli_fetch_assoc($result)) {
-			extract($row);
-			session_start();
-			$_SESSION['username'] = $username;
-			$_SESSION['role'] = $role;
-			echo "Login Sucessful!";
-		}
-	} else {
-		echo "Incorrect Username and Password!";
-	}
-}
-
-
 function get_title(){
 	echo 'Log In';
 }
 
 function display_content(){
-	// session_start();
-
-	// global $users;
-
-	// if(isset($_POST['login'])){
-	// 		$username = $_POST['usernameLogin'];
-	// 		$password = $_POST['passwordLogin'];
-	// 		foreach ($users as $user) {
-	// 			if($username == $user['username'] && $password == $user['password'])
-	// 			{
-					
-	// 			 	// header('location:home.php');
-	// 			}
-	// 		}
-	// 	}
 ?>
 	<div class='row'>
 	<div class='col-sm-12 col-md-6'>
@@ -71,6 +31,6 @@ function display_content(){
 <?php
 }
 
-require_once 'index.php';
+require 'index.php';
 
 ?>

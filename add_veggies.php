@@ -25,7 +25,6 @@ if(isset($_POST['cancel_new'])) {
 	header('location:items.php');
 }
 
-
 function get_title(){
 	echo 'Add New Item';
 }
@@ -70,6 +69,7 @@ function display_content(){ ?>
 						<option>Tubers</option>
 					</select>
 				</div>
+				
 				<input class="btn btn-primary" type="submit" name="add_new" value="Add New">
 				<input class="btn btn-default" type="submit" name="cancel_new" value="Cancel">
 			</form>

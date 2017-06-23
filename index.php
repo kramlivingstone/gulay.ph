@@ -2,6 +2,32 @@
 
 session_start();
 
+	if(isset($_POST['login'])) {
+		require_once 'connection.php';
+
+		$username = $_POST['usernameLogin'];
+		$password = sha1($_POST['passwordLogin']);
+
+		$sql = "SELECT * FROM users
+				WHERE username = '$username'
+				AND password = '$password'";
+
+		$result = mysqli_query($conn,$sql);
+		if(mysqli_num_rows($result)>0) {
+			while($row = mysqli_fetch_assoc($result)) {
+				extract($row);
+				$_SESSION['username'] = $username;
+				$_SESSION['role'] = $role;
+				header('location:home.php');
+
+			}
+		} else {
+			echo "Incorrect Username and Password!";
+		}
+
+	}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,6 +53,7 @@ session_start();
 
 <?php
 
+require_once 'lib/script.php';
 require_once 'partials/nav.php'; 
 
 display_content();

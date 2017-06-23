@@ -14,11 +14,14 @@ require_once 'item_filter.php';
 require_once 'connection.php';
 
 
+
 $sql = "SELECT * FROM vegetables";
 
 $result = mysqli_query($conn,$sql);
+// $name = $_POST['item_name'];
 
-if(mysqli_num_rows($result)>0) {
+
+if(mysqli_num_rows($result) > 0) {
 echo "<div class='row'>";
 
 while ($row = mysqli_fetch_assoc($result)) {
@@ -33,19 +36,33 @@ extract($row);
 				<input class='btn btn-primary' type='submit' name='view_more' value='View Details'>
 			</div>
 		</div>
+		<?php  
+				if(!isset($_SESSION['role'])) {
+					
+				}elseif ($_SESSION['role'] == 'admin') {
+					echo "<a href='edit_veggies.php?id=$item_id'><button class='btn btn-primary' type='submit' name='edit'>Edit</button></a>";
+					echo "<a href='delete_veggies.php?id=$item_id'><button class='btn btn-default' type='submit' name='delete'>Delete</button></a>";
+				}	
+		?>
 	</div>
-		
 
 <?php
-
 }
-echo "</div>"; 		
-?>
+echo "</div>";
+
+
+?>	
+		<?php if(!isset($_SESSION['role'])) { 
+
+			  } elseif($_SESSION['role'] == 'admin') { 
+		?>
 		<div class='row'>
 		<p><a href='add_veggies.php' class='btn btn-primary' id='add_new'>Add New</a></p>
 		</div>
+		<?php } ?>
 <?php
-}  
+
+}
 }
 
 require_once 'index.php';
