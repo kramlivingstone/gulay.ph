@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 24, 2017 at 01:50 AM
--- Server version: 10.1.21-MariaDB
--- PHP Version: 7.1.2
+-- Generation Time: Jun 24, 2017 at 08:44 AM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -68,7 +68,9 @@ INSERT INTO `vegetables` (`item_id`, `item_name`, `item_description`, `item_imag
 (1, 'Artichoke', 'Globe artichokes have always been considered a delicacy. They have been grown in Southern Europe for many centuries. The immature flower bud before the flower appears, when it consists of overlapping green/purple scales, is the part eaten. In New Zealand ', 'img/artichoke.jpg', 150, 'Bulbs'),
 (2, 'Cabbage', '  Cabbages are from the brassica family and are one of the oldest vegetables known.\r\n				\r\n				\r\n				\r\n				\r\n				\r\n				\r\n												', 'img/cabbage.jpg', 300, 'Bulbs'),
 (3, 'Carrot', '\r\nCarrots have been a staple in many countries for thousands of years although it is only since the 16th century that they have been orange.\r\n\r\nEarliest records show carrots were purple; later records show red, yellow and white carrots\r\nwere grown. Orange', 'img/carrot.jpg', 50, 'Roots'),
-(5, 'Asian Greens', 'Choy is the Chinese word for any leafy vegetable. Asian greens have also been called cabbage â€“ even though they donâ€™t resemble Western cabbages. The names of Asian vegetables can be confusing as they are called different names in different areas of Ch', 'img/asian_greens.jpg', 100, 'Leaves');
+(5, 'Asian Greens', 'Choy is the Chinese word for any leafy vegetable. Asian greens have also been called cabbage â€“ even though they donâ€™t resemble Western cabbages. The names of Asian vegetables can be confusing as they are called different names in different areas of Ch', 'img/asian_greens.jpg', 100, 'Leaves'),
+(6, 'Artichoke - Jerusalem', 'Jerusalem artichokes are tubers which look a little like knobbly potatoes. They are also called earth apple, and are a species of sunflower native to eastern North America. They were first cultivated by the native Americans. Plants were taken to France in', 'img/artichokes_jerusalem.jpg', 100, 'Tubers'),
+(7, 'Asparagus', 'Asparagus originated in the Eastern Mediterranean and was a favourite of the Greeks and Romans who used it as a medicine.', 'img/asparagus.jpg', 80, 'Stems');
 
 --
 -- Indexes for dumped tables
@@ -100,7 +102,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `vegetables`
 --
 ALTER TABLE `vegetables`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
