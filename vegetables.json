@@ -40,5 +40,19 @@
         "image": "img\/artichoke.jpg",
         "price": "Php 200.00",
         "category": "Green"
+    },
+    {
+        "name": "Artichoke - Jerusalem",
+        "description": "Jerusalem artichokes are tubers which look a little like knobbly potatoes. They are also called earth apple, and are a species of sunflower native to eastern North America. They were first cultivated by the native Americans. Plants were taken to France in 1605 and by the mid-1600s, the Jerusalem artichoke had become a very common vegetable for human consumption in Europe.",
+        "image": "img\/artichokes_jerusalem.jpg",
+        "price": "Php 100.00",
+        "category": "Tubers"
+    },
+    {
+        "name": "Asparagus",
+        "description": "Asparagus originated in the Eastern Mediterranean and was a favourite of the Greeks and Romans who used it as a medicine.",
+        "image": "img\/asparagus.jpg",
+        "price": "Php 80.00",
+        "category": "Stems"
     }
 ]

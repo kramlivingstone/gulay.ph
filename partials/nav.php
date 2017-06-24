@@ -26,6 +26,7 @@
 		    			echo "<a href='login.php' class='dropdown-toggle' data-toggle='dropdown' role='button'>Hi, " . $_SESSION['username'] . " <span class='caret'></span></a>";
 		    			echo "<ul class='dropdown-menu'>";
 		    			if(isset($_SESSION['username'])){
+		    				echo "<li><a href='profile.php'>My Profile</a></li>";
 		    				echo "<li><a href='log_out.php'>Sign Out</a></li>";
 		    				//session_unset($_SESSION['username']);
 		    			}
